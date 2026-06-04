@@ -81,7 +81,7 @@
             this.Controls.Add(this.tbValor);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Cargar Datos";
+            this.Text = "Ver Datos";
             this.ResumeLayout(false);
             this.PerformLayout();
 
