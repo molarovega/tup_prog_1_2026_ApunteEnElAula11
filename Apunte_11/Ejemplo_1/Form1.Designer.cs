@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.btnMostrarOrdenado = new System.Windows.Forms.Button();
+            this.btnMostrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegistrar
@@ -42,22 +42,22 @@
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // btnMostrarOrdenado
+            // btnMostrar
             // 
-            this.btnMostrarOrdenado.Location = new System.Drawing.Point(159, 34);
-            this.btnMostrarOrdenado.Name = "btnMostrarOrdenado";
-            this.btnMostrarOrdenado.Size = new System.Drawing.Size(91, 41);
-            this.btnMostrarOrdenado.TabIndex = 1;
-            this.btnMostrarOrdenado.Text = "Mostrar Ordenado";
-            this.btnMostrarOrdenado.UseVisualStyleBackColor = true;
-            this.btnMostrarOrdenado.Click += new System.EventHandler(this.btnMostrarOrdenado_Click);
+            this.btnMostrar.Location = new System.Drawing.Point(159, 34);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(91, 41);
+            this.btnMostrar.TabIndex = 1;
+            this.btnMostrar.Text = "Mostrar";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 122);
-            this.Controls.Add(this.btnMostrarOrdenado);
+            this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnRegistrar);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -69,7 +69,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.Button btnMostrarOrdenado;
+        private System.Windows.Forms.Button btnMostrar;
     }
 }
 

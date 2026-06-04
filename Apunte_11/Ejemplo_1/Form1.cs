@@ -36,6 +36,7 @@ namespace Ejemplo_1
             
             return idxBuscado;
         }
+
         
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -54,14 +55,15 @@ namespace Ejemplo_1
             fDatos.Dispose();
         }
 
-        private void btnMostrarOrdenado_Click(object sender, EventArgs e)
+        private void btnMostrar_Click(object sender, EventArgs e)
         {
+
             Form2 fDatos = new Form2();
             Form3 fResultados = new Form3();
 
-            if (fDatos.ShowDialog() == DialogResult.OK) 
+            if (fDatos.ShowDialog() == DialogResult.OK)
             {
-                int buscar = Convert.ToInt32( fDatos.tbValor.Text);
+                int buscar = Convert.ToInt32(fDatos.tbValor.Text);
                 int encontrado = BusquedaSecuencial(buscar);
 
                 if (encontrado == -1)
@@ -69,7 +71,7 @@ namespace Ejemplo_1
                     fResultados.lsbResultados.Items.Add("Valor no encontrado");
                     fResultados.ShowDialog();
                 }
-                else 
+                else
                 {
                     fResultados.lsbResultados.Items.Add($"Valor encontrado: {Vector[encontrado]}");
                     fResultados.ShowDialog();
@@ -77,9 +79,6 @@ namespace Ejemplo_1
             }
             fDatos.Dispose();
             fResultados.Dispose();
-
-
-
         }
     }
 }
